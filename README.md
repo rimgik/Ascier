@@ -26,7 +26,8 @@ The easier way to do this was probably through **ffmpeg** <br>
 <br>This turn **rickroll.mp4 (640x360)** into AsciiArt, the output file are place under **frames** folder<br>
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo - | Ascier -width 640 -height 360 -scale .5 -o ./frames/%03d.txt```<br>
 
-![output](https://github.com/rimgik/Ascier/assets/109288765/aba18693-9385-4a4f-be28-d9f076f711c9)
+![output](https://github.com/rimgik/Ascier/assets/109288765/2cc5950f-3340-45dc-8fa3-79a1c72dd83f)
+
 
 
 Note :\
