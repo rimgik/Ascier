@@ -24,7 +24,8 @@ You can convert videos into ascii art, by first turning the video into a **rgb24
 The easier way to do this was probably through **ffmpeg** <br>
 <br>This turn **rickroll.mp4 (640x360)** into AsciiArt, the output file are place under **frames** folder<br>
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo - | Ascier -width 640 -height 360 -scale .5 -o ./frames/%03d.txt```<br>
-### Output
+
+https://github.com/rimgik/Ascier/assets/109288765/c5c4f913-d3cf-4714-a2d1-e95ba600358d
 
 Note :\
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo``` generate **rgb24 pixel stream**\
