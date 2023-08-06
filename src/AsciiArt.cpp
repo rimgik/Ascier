@@ -79,7 +79,7 @@ void AsciiArt::display(const std::string_view& text, int count) const {
     } else {
         std::ofstream file;
         if (count == -1) {
-            std::filesystem::create_directories(outputPath);
+            std::filesystem::create_directories(outputPath.parent_path());
             file.open(outputPath, std::ios::out | std::ios::in | std::ios::trunc);
         } else {
             
