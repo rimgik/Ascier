@@ -20,12 +20,14 @@ Convert test.png into ascii art into stdout with final image scaled half\
 ``` Ascier -i ./test.png -scale .5 -o output.txt ```
 <br>
 ## Pair with ffmpeg
+
 You can convert videos into ascii art, by first turning the video into a **rgb24 pixel stream**, then feed it through the stdin of Ascier
 The easier way to do this was probably through **ffmpeg** <br>
 <br>This turn **rickroll.mp4 (640x360)** into AsciiArt, the output file are place under **frames** folder<br>
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo - | Ascier -width 640 -height 360 -scale .5 -o ./frames/%03d.txt```<br>
 
-https://github.com/rimgik/Ascier/assets/109288765/c6f1e1c4-c5f5-4bb1-a79f-67f80e759a8b
+![output](https://github.com/rimgik/Ascier/assets/109288765/aba18693-9385-4a4f-be28-d9f076f711c9)
+
 
 Note :\
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo``` generate **rgb24 pixel stream**\
