@@ -32,7 +32,7 @@ The easier way to do this is probably through **ffmpeg** <br>
 
 Note :\
 ```ffmpeg -i rickroll.mp4 -pix_fmt rgb24 -f rawvideo``` generate **rgb24 pixel stream**\
-       ```%03d``` is a format specifier and will be replace by interger starting from 0
+       ```%03d``` is a format specifier and will be replace by integer starting from 0
 
 ## Building
 You need to link these library (opencv)\
